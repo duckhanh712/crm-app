@@ -1,0 +1,23 @@
+.alert-reset-pw {
+  position: absolute;
+  right: 50%;
+  margin-right: -250px;
+  width: 500px;
+  z-index: 100;
+  animation: ani ease-in .5s;
+  transition: top 0.5s ease-in-out;
+}
+.img-reset:active {
+  border: 2px solid blue;
+}
+
+@keyframes ani {
+  0% {
+    // transform: translateY(0);
+    top: -50%;
+  }
+  100% {
+    // transform: translateY(100);
+    top: 15%; 
+  }
+}

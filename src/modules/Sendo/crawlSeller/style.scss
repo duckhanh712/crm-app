@@ -1,0 +1,26 @@
+
+.select-call-state {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100px;
+  .box-note {
+    position: absolute;
+    left: -140px !important;
+  }
+}
+.title-filter {
+  font-size: 12px;
+  margin-left: 15px;
+  margin-bottom: 0;
+}
+.image-refetch {
+  width: 50%;
+  margin-left: 15px;
+  cursor: pointer;
+  padding: 2px;
+  border-radius: 50%;
+  &:active {
+    background-color: #2196f3;
+  }
+}

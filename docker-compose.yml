@@ -1,0 +1,12 @@
+version: "3"
+services:
+  api:
+    restart: unless-stopped
+    image: "${IMAGE_BUILD}"
+    ports:
+      - 9000:9000
+    environment:
+      - PORT=9000
+      - API_DOMAIN=https://api.crawler-admin.chozoi.com
+      - CHOZOI_API=https://api.chozoi.com
+      - ROBOTS_FILE_NAME=dev_robots.txt

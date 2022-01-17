@@ -1,0 +1,35 @@
+@mixin menu-main {
+  .menu-main {
+    .nav-item{
+      background-color: #181824;
+    }
+    
+    .nav-item.hover-open {
+      background-color: none;
+    }
+    &.sidebar .nav-item:hover .nav-item {
+      background: none;
+    }
+    &.sidebar .nav .nav-item.active {
+      background: #181824; 
+    }
+    &.sidebar .nav.sub-menu .nav-item .nav-link {
+      color: #1da1f2; 
+      /* background: transparent; */
+    }
+    &.sidebar .nav.sub-menu .nav-item .nav-link.active {
+      color: #1da1f2;
+      /* background: transparent; */
+    }
+    &.sidebar .nav .nav-item .nav-link .menu-title  {
+      color: #1da1f2
+    }
+    &.sidebar .nav .nav-item:hover {
+      background: none;
+    }
+    &.sidebar .nav-item:hover .nav.sub-menu .nav-item {
+      background-color: none;
+    }
+
+  }
+}

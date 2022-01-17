@@ -1,0 +1,48 @@
+@import "./style/aboutStyle.scss";
+@import "./style/productStyle.scss";
+
+@mixin shopDetail {
+  .shop-detail {
+    @include about-product;
+    @include product-style;
+    h3 {
+      font-size: 19px;
+      font-weight: 600;
+    }
+    .span-title {
+      font-size: 19px;
+      font-weight: 500;
+      display: inline-block;
+      width: 154px;
+      line-height: 26px;
+      margin: 10px 11px;
+      // float: left;
+      width: 190px;
+    }
+    i.mdi-crosshairs-gps{
+      font-size: 12px;
+      margin: 0 9px 0 0;
+      color: #ffa009;
+    }
+    i.mdi-flag-triangle{
+      font-size: 15px;
+      margin: 0 9px 0 0;
+      color: #f54b24;
+    }
+    &.info-main {
+      margin-top: 30px;
+    }
+    p{
+      display: flex;
+      align-items: center;
+    }
+    input {
+      width: 70% !important;
+      height: 37px;
+    }
+    .ant-empty-description {
+      justify-content: center;
+    }
+
+  }
+}

@@ -1,0 +1,24 @@
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+.load-file {
+  position: absolute;
+  right: 20px;
+  // top: 82px;
+}
+// .ant-upload-span {
+  // width: 200px !important;
+// }
+
+@media only screen and (max-width: 425px) {
+  .load-file {
+    position: relative;
+  }
+  .ant-upload-span {
+    width: 150px !important;
+  }
+}

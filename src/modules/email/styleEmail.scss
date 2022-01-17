@@ -1,0 +1,15 @@
+@import "src/modules/email/style/modal";
+
+@include modal-email-style-main; 
+.email-style{
+  .contain-process-email {
+    width: 87%;
+    height: 10px;
+    margin: 7px;
+    border: 1px solid rgb(179, 176, 176);
+    background-color: #fff;
+    .process-email {
+      height: 100%;
+    }
+  }
+}
